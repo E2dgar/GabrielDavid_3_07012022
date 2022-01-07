@@ -11,7 +11,6 @@
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
-    scroll-behavior: smooth;
   }
   
   /* Sections
@@ -348,24 +347,4 @@
   [hidden] {
     display: none;
   }
-
-  /* Box-sizing */
-
-  * {
-    box-sizing: border-box;
-  }
-
-  /* Accessibility */
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap; /* added line */
-    border: 0;
-}
-
  

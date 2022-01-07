@@ -1,0 +1,19 @@
+/*Fonts sizes */
+$labor: 1rem;       /* 16px */
+$f18: 1.125rem;
+$f20: 1.25rem;
+$logo: 2rem;        /* 32px */
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+}
+
+*[class*="logo"],
+*[class*="heading"]{
+    font-family: "Shrikhand", sans-serif;
+}
