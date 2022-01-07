@@ -1,3 +1,3 @@
-#Projet 3
+# Projet 3
 
-##Dynamisez une page web avec des animations CSS
+## Dynamisez une page web avec des animations CSS
