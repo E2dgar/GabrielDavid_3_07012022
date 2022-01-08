@@ -1,3 +1,38 @@
 .about {
-    background: $color-grey-main
+    background: $color-grey-main;
+    padding: 2rem 1rem;
+
+    h1,
+    p,
+    a {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    h1 {
+        max-width: 17ch;
+        margin: 1rem auto;
+        font-size: $title;
+    }
+
+    p {
+        max-width: 36ch;
+    }
+
+    a {
+        display: block;
+        max-width: max-content;
+        padding: 1rem 1.5rem;
+        margin: 2rem auto;
+        border-radius: 50px;
+        background: linear-gradient($color-secondary, $color-primary);
+        color: $color-white;
+        box-shadow: 2px 2px 5px #b9b9b9;
+        transition: opacity .3s, box-shadow .35s;
+
+        &:hover {
+            opacity: .85;
+            box-shadow: 2px 2px 5px 2px#b9b9b9;
+        }
+    }
 }
