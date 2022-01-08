@@ -9,6 +9,11 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Links */
+a {
+  text-decoration: none;
+}
+
 /* Accessibility */
 .sr-only {
   position: absolute;
