@@ -16,13 +16,20 @@
             display: flex;
             align-items: center;
 
+            &:hover a,
+            &:hover i {
+                color: $color-secondary;
+            }
+
             a {
                 color: $color-white;
+                transition: color .3s;
             }
     
             .footer__icon {
                 color: $color-white;
                 flex-basis: 8%;
+                transition: color .3s;
             }
 
         }
