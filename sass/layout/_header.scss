@@ -1,20 +1,27 @@
 .header {
-    position: relative;
-    text-align: center;
-    padding: 1rem 2rem .75rem;
+    padding: 1rem 1rem .75rem;
     box-shadow: 0 0 7px $color-grey-darker;
+    display: flex;
+    align-items: center;
 
-    &__logo {
-        color: $color-black;
-        font-size: $logo;
-    }
+        &__link {
+            flex-basis: 20vw;
+    
+            i {
+                font-size: $f20;
+                color: $color-black;
+            }
 
-    &__return {
-        position: absolute;
-        left: 2rem;
+            & + .header__logo {
 
-        svg {
-            height: $logo;
+                transform: translateX(-10vw);
+            }
         }
-    }
+
+        p {
+            flex-grow: 1;
+            margin: 0;
+            text-align: center;
+            font-size: $logo;
+        }
 }
