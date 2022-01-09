@@ -28,8 +28,8 @@
         border-radius: 50px;
         background: linear-gradient($color-secondary, $color-primary);
         color: $color-white;
-        box-shadow: 2px 2px 5px #b9b9b9;
         transition: opacity .4s, box-shadow .4s;
+        @include main-shadow;
 
         &:hover {
             opacity: .85;

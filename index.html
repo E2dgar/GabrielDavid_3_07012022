@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Réservez vos menus parmi notre sélkection de restaurants">
     <link rel="stylesheet" href="dist/css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,19 +46,23 @@
 
             <article class="restaurant-preview">
                 <div class="restaurant-preview__new">Nouveau</div>
+
                 <div class="restaurant-preview__img-container">
-                    <img class="restaurant-preview__img-container--landscape" src="dist/img/palette_du_gout.jpg" alt="Restaurant La palette du goût">
+                    <img class="restaurant-preview__img-container--landscape" src="dist/img/palette_du_gout.jpg" alt="Restaurant La palette du goût" width=500px>
                 </div>
+
                 <h3 class="restaurant-preview__heading">
                     <a href="palette_du_gout.html">La palette du goût</a>
                 </h3>
-                <p class="restaurant-preview__where">Ménilmontant</p>
-                <form action="">
-                    <label for="like">
-                        <input class="sr-only" type="checkbox" name="" id="like">  
-                        <div class="heart">
 
+                <p class="restaurant-preview__where">Ménilmontant</p>
+
+                <form id="like-form-palette">
+                    <label for="like-palette" aria-label="Liker La palette du goût">
+                        <input class="sr-only" type="checkbox" name="like-palette" id="like-palette">  
+                        <div class="heart" aria-hidden="true">
                             <i class="far fa-heart"></i>
+
                             <div class="heart-bkg">
                                 <i class="fas fa-heart"></i>
                             </div>
@@ -69,33 +74,84 @@
 
             <article class="restaurant-preview">
                 <div class="restaurant-preview__new">Nouveau</div>
+
                 <div class="restaurant-preview__img-container">
                     <img class="restaurant-preview__img-container--portrait" src="dist/img/note_enchantee.jpg" alt="Restaurant La note enchantée">
                 </div>
+
                 <h3 class="restaurant-preview__heading">
-                    <a href="note_enchantee">La note enchnatée</a>
+                    <a href="note_enchantee">La note enchantée</a>
                 </h3>
+
                 <p class="restaurant-preview__where">Charonne</p>
+
+                <form action="">
+                    <label for="like-note-enchantee" aria-label="Like La note enchantée">
+                        <input class="sr-only" type="checkbox" name="like-note-enchantee" id="like-note-enchantee">
+
+                        <div class="heart" aria-hidden="true">
+                            <i class="far fa-heart"></i>
+
+                            <div class="heart-bkg">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                          
+                    </label>
+                </form>
             </article>
 
             <article class="restaurant-preview">
                 <div class="restaurant-preview__img-container">
                     <img class="restaurant-preview__img-container--landscape" src="dist/img/a_la_francaise.jpg" alt="Restaurant A la française">
                 </div>
+
                 <h3 class="restaurant-preview__heading">
                     <a href="a_la_francaise">À la française</a>
                 </h3>
+
                 <p class="restaurant-preview__where">Cité Rouge</p>
+
+                <form action="">
+                    <label for="like-a-la-francaise" aria-label="Liker A la française">
+                        <input class="sr-only" type="checkbox" name="like-a-la-francaise" id="like-a-la-francaise">  
+
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                            
+                            <div class="heart-bkg">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                          
+                    </label>
+                </form>
             </article>
 
             <article class="restaurant-preview">
                 <div class="restaurant-preview__img-container">
                     <img class="restaurant-preview__img-container--landscape" src="dist/img/delice_des_sens.jpg" alt="Restaurant Le délice des sens">
                 </div>
+
                 <h3 class="restaurant-preview__heading">
                     <a href="delice_des_sens">Le délice des sens</a>
                 </h3>
+
                 <p class="restaurant-preview__where">Folie-Méricourt</p>
+
+                <form action="">
+                    <label for="like" aria-label="Liker La délice des sens">
+                        <input class="sr-only" type="checkbox" name="like-delice-des-sens" id="like-delice-des-sens">  
+                        <div class="heart">
+
+                            <i class="far fa-heart"></i>
+                            <div class="heart-bkg">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                          
+                    </label>
+                </form>
             </article>
         </section>
     </main>

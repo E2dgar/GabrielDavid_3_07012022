@@ -1,10 +1,12 @@
 @import "./base/normes";
-@import "./base/variables";
+@import "./base/colors";
 @import "./base/font";
+
+@import "./utils/shadow";
 
 @import "./layout/header";
 @import "./layout/main";
-@import "./layout/form";
+@import "./layout/forms";
 @import "./layout/about";
 @import "./layout/how";
 @import "./layout/restaurants";

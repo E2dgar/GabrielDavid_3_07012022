@@ -1,5 +1,14 @@
 .how {
     padding: 2rem 1rem;
+    margin: 0 auto;
+    max-width: 50ch;
+    width: 100%;
+
+    h2 {
+    @media screen and(min-width: 769px){
+        text-align:center;
+    }
+}
 }
 
 ol {
@@ -8,6 +17,7 @@ ol {
     padding: 0 0 0 1rem;
 
     li {
+        width: 100%;
         counter-increment: custom-counter;
         position: relative;
         width: 100%;
@@ -15,8 +25,8 @@ ol {
         background: $color-grey-main;
         border-radius: 20px;
         margin: 2rem 0;
-        box-shadow: 2px 5px 5px $color-grey-darker;
         font-weight: bold;
+        @include main-shadow;
 
         i {
             margin: 0 1.5rem 0 .5rem;

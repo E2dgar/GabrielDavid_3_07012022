@@ -1,9 +1,15 @@
 .restaurant-preview {
     background-color: $color-white;
     border-radius: 20px;
-    box-shadow: 0 2px 5px $color-grey-darker;
     position: relative;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem;
+    max-width: 50ch;
+    @include main-shadow;
+
+    @media screen and(min-width: 769px){
+        flex-basis: 48%;
+        margin: unset;
+    }
 
     &__img-container {
         width: 100%;
@@ -29,7 +35,7 @@
         margin: 1rem .8rem .3rem;
         font-family: "Roboto", sans-serif;
 
-        & a {
+        a {
             color: $color-black;
 
             &::before {
@@ -54,60 +60,10 @@
         top: .8rem;
         right: 1rem;
         background: $color-tertiary;
-        color: #028867;
+        color: $color-tertiary-darker;
         padding: .35rem .7rem;
         border-radius: 3px;
         font-size: 14px;
         font-weight: 500
-    }
-
-    form {
-        position:absolute;
-        bottom: 2rem;
-        right: 2rem;
-        background-color: unset;
-        box-shadow: unset;
-
-        .heart {
-            display: inline-block;
-            position:relative;
-
-            &:hover {
-                cursor: pointer;
-            }
-
-            .far {
-                color: grey;
-                transition: color   .5s;
-            }
-
-            i {
-                font-size: 2rem;
-            }
-
-            .heart-bkg {
-                position: absolute;
-                top: 0;
-                left: 0;
-                background :linear-gradient($color-primary,$color-secondary) no-repeat;
-                background-size: 32px 32px;
-                background-position: 0 -32px;
-                transition: background-position .5s ease-in-out;
-                -webkit-background-clip: text;
-                background-clip: text;
-                color: transparent;
-            }
-        }
-
-          
-        input:checked ~ .heart {
-            .far {
-                color:#0000;   
-            }
-            
-            .heart-bkg  {
-                background-position: 0 0;
-            }
-        }
     }
 }
