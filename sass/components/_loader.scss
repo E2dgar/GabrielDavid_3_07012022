@@ -13,7 +13,7 @@
     .fas {
         position: absolute;
         font-size: $logo;
-        left: 50%;
+        left: calc(50% - 13px);
         top: calc(30vh + 20px);
         animation: color-switch 1.5s alternate-reverse 2;
     }
@@ -25,7 +25,7 @@
     width: 72px;
     height: 72px;
     top: 30vh;
-    left: calc(50% - 22px);
+    left: calc(50% - 36px);
     border: 8px solid;
     border-radius: 50%;
     animation: lds-ring 1.5s cubic-bezier(0.5, 0, 0.5, 1) 2;
