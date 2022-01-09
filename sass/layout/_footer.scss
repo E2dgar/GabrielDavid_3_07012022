@@ -18,7 +18,7 @@
 
             &:hover a,
             &:hover i {
-                color: $color-primary;
+                color: $color-secondary;
             }
 
             a {
@@ -28,7 +28,7 @@
     
             .footer__icon {
                 color: $color-white;
-                flex-basis: 8%;
+                flex-basis: 2rem;
                 transition: color .3s;
             }
 

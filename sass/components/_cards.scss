@@ -68,20 +68,10 @@
         background-color: unset;
         box-shadow: unset;
 
-
-        input:checked ~ .heart {
-            .far {
-                color:#0000;
-
-                
-            }
-            .heart-bkg  {
-                background-position: 0 0;
-             }
-        }
         .heart {
             display: inline-block;
             position:relative;
+
             &:hover {
                 cursor: pointer;
             }
@@ -89,36 +79,35 @@
             .far {
                 color: grey;
                 transition: color   .5s;
-                
-                
             }
 
             i {
                 font-size: 2rem;
-
             }
 
             .heart-bkg {
                 position: absolute;
                 top: 0;
                 left: 0;
-                
-            background :linear-gradient($color-primary,$color-secondary) no-repeat;;
-            background-size: 32px 32px;
-            background-position: 0 -32px;
-            
-            transition: background-position .5s ease-in-out;
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-
-            i {
-
-               
+                background :linear-gradient($color-primary,$color-secondary) no-repeat;
+                background-size: 32px 32px;
+                background-position: 0 -32px;
+                transition: background-position .5s ease-in-out;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
             }
-            }
+        }
 
+          
+        input:checked ~ .heart {
+            .far {
+                color:#0000;   
+            }
             
+            .heart-bkg  {
+                background-position: 0 0;
+            }
         }
     }
 }
