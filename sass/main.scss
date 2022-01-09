@@ -4,11 +4,13 @@
 
 @import "./utils/shadow";
 
+@import "./components/cards";
+@import "./components/loader";
+
 @import "./layout/header";
 @import "./layout/main";
 @import "./layout/forms";
 @import "./layout/about";
 @import "./layout/how";
 @import "./layout/restaurants";
-@import "./components/cards";
 @import "./layout/footer";
