@@ -1,0 +1,52 @@
+.how {
+    padding: 2rem 1rem;
+}
+
+ol {
+    counter-reset: custom-counter;
+    list-style: none;
+    padding: 0 0 0 1rem;
+
+    li {
+        counter-increment: custom-counter;
+        position: relative;
+        width: 100%;
+        padding: 1.5rem 2rem;
+        background: $color-grey-main;
+        border-radius: 20px;
+        margin: 2rem 0;
+        box-shadow: 2px 5px 5px $color-grey-darker;
+        font-weight: bold;
+
+        i {
+            margin: 0 1.5rem 0 .5rem;
+            font-size: $f18;
+            color: $color-black-lighter;
+        }
+
+        &::before {
+            content: counter(custom-counter);
+            color: red;
+            width: 30px;
+            height: 30px;
+            left: -15px;
+            top: 50%;
+            transform: translateY(-15px);
+            position: absolute;
+            border-radius: 50%;
+            color: $color-white;
+            background-color: $color-primary;
+            text-align: center;
+            line-height: 30px;
+            font-weight: normal;
+        }
+
+        &:hover {
+            background-color: lighten($color-primary, 30%);
+
+            & i {
+                color: $color-primary;
+            }
+        }
+    }
+}
