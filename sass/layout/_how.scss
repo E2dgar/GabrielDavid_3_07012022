@@ -21,7 +21,7 @@ ol {
         i {
             margin: 0 1.5rem 0 .5rem;
             font-size: $f18;
-            color: $color-black-lighter;
+            color: lighten($color-black-lighter, 20%);
         }
 
         &::before {
