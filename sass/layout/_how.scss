@@ -22,7 +22,8 @@ ol {
         position: relative;
         width: 100%;
         padding: 1.5rem 2rem;
-        background: $color-grey-main;
+        background-color: $color-grey-main;
+        transition: background-color .3s;
         border-radius: 20px;
         margin: 2rem 0;
         font-weight: bold;
