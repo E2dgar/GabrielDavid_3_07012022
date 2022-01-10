@@ -3,9 +3,11 @@
 @import "./base/font";
 
 @import "./utils/shadow";
+@import "./utils/mixins";
 
 @import "./components/cards";
 @import "./components/loader";
+@import "./components/menu";
 
 @import "./layout/header";
 @import "./layout/main";
