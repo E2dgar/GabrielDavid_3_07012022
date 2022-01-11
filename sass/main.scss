@@ -4,10 +4,12 @@
 
 @import "./utils/shadow";
 @import "./utils/mixins";
+@import "./utils/animations";
 
 @import "./components/cards";
 @import "./components/loader";
 @import "./components/menu";
+@import "./components/button-primary";
 
 @import "./layout/header";
 @import "./layout/main";

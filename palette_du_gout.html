@@ -46,52 +46,184 @@
 
         <form id="menu-form" class="menu-form">
             <!-- ENTREES -->
-            <h2>Entrées</h2>
+            <fieldset>
+                <legend>Entrées</legend>
 
-            <label class="menu-form__item" for="entree-1">
-                <input type="radio" name="entree-radio" id="entree-1" class="sr-only">
-                <div class="details">
+                <input type="radio" name="entree-radio" id="entree-1" class="sr-only" aria-labelledby="label-entree-1 desc-entree-1 price-entree-1">
+                <div class="dish">
+                    <div class="u-flex-row">
+                        <div class="dish__details">
+                            <label id="label-entree-1" for="entree-1">Fricassée d'escargot</label>
+                            <p id="desc-entree-1">Au piment d'Espelette</p>
+                        </div>
 
-                    <h3>Intitulé du plat</h3>
-                    <p>le prix du plat est un texte plutôt long<span>€</span></p>
+                        <p id="price-entree-1" class="dish__price">
+                            <strong>25€</strong>
+                        </p>
+
+                        <span class="dish__check-icon" aria-hidden="true">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    </div>
                 </div>
-                <div class="check-icon">
-                    <i class="fas fa-check-circle"></i>
+
+                <input type="radio" name="entree-radio" id="entree-2" class="sr-only" aria-labelledby="label-entree-2 desc-entree-2 price-entree-2">
+                <div class="dish">
+                    <div class="u-flex-row">
+                        <div class="dish__details">
+                            <label id="label-entree-2" for="entree-2">Foie gras de canard mi-cuit</label>
+                            <p id="desc-entree-2">Et ses copeaux de truffe noire</p>
+                        </div>
+
+                        <p id="price-entree-2" class="dish__price">
+                            <strong>35€</strong>
+                        </p>
+
+                        <span class="dish__check-icon" aria-hidden="true">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    </div>
                 </div>
-            </label>
 
-            <label for="entree-2">
-                <input type="radio" name="entree-radio" id="entree-2">
-                <h3></h3>
-                <p><span>€</span></p>
-            </label>
+                <input type="radio" name="entree-radio" id="entree-3" class="sr-only" aria-labelledby="label-entree-3 desc-entree-3 price-entree-3">
+                <div class="dish">
+                    <div class="u-flex-row">
+                        <div class="dish__details">
+                            <label id="label-entree-3" for="entree-3">Oeuf au plat</label>
+                            <p id="desc-entree-3">Assaisonné à la truffe sur lit de caviar</p>
+                        </div>
 
-            <label for="entree-1">
-                <input type="radio" name="entree-radio" id="entree-2">
-                <h3></h3>
-                <p><span>€</span></p>
-            </label>
+                        <p id="price-entree-3" class="dish__price">
+                            <strong>20€</strong>
+                        </p>
+
+                        <span class="dish__check-icon" aria-hidden="true">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    </div>
+                </div>
+            </fieldset>
 
             <!-- PLATS -->
-            <h2>Plats</h2>
+            <fieldset>
+                <legend>Plats</legend>
 
-            <label for="plat-1">
-                <input type="radio" name="plat-radio" id="plat-1">
-                <h3></h3>
-                <p><span>€</span></p>
-            </label>
+                <input type="radio" name="plat-radio" id="plat-1" class="sr-only" aria-labelledby="label-plat-1 desc-plat-1 price-plat-1">
+                <div class="dish">
+                    <div class="u-flex-row">
+                        <div class="dish__details">
+                            <label id="label-plat-1" for="plat-1">Filet de boeuf aux herbes</label>
+                            <p id="desc-plat-1">Accompagné de sa ribambelle de légumes</p>
+                        </div>
 
-            <label for="plat-2">
-                <input type="radio" name="plat-radio" id="plat-2">
-                <h3></h3>
-                <p><span>€</span></p>
-            </label>
+                        <p id="price-plat-1" class="dish__price">
+                            <strong>40€</strong>
+                        </p>
 
-            <label for="plat-1">
-                <input type="radio" name="plat-radio" id="plat-2">
-                <h3></h3>
-                <p><span>€</span></p>
-            </label>
+                        <span class="dish__check-icon" aria-hidden="true">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <input type="radio" name="plat-radio" id="plat-2" class="sr-only" aria-labelledby="label-plat-2 desc-plat-2 price-plat-2">
+                <div class="dish">
+                    <div class="u-flex-row">
+                        <div class="dish__details">
+                            <label id="label-plat-2" for="plat-2">Parmentier de queue de boeuf</label>
+                            <p id="desc-plat-2">À la truffe noire sur sa purée de panais</p>
+                        </div>
+
+                        <p id="price-plat-2" class="dish__price">
+                            <strong>35€</strong>
+                        </p>
+
+                        <span class="dish__check-icon" aria-hidden="true">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <input type="radio" name="plat-radio" id="plat-3" class="sr-only" aria-labelledby="label-plat-3 desc-plat-3 price-plat-3">
+                <div class="dish">
+                    <div class="u-flex-row">
+                        <div class="dish__details">
+                            <label id="label-plat-3" for="plat-3">Filet de turbot</label>
+                            <p id="desc-plat-3">Aux agrumes</p>
+                        </div>
+
+                        <p id="price-plat-3" class="dish__price">
+                            <strong>44€</strong>
+                        </p>
+
+                        <span class="dish__check-icon" aria-hidden="true">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    </div>
+                </div>
+            </fieldset>
+
+             <!-- DESSERTS -->
+             <fieldset>
+                 <legend>Desserts</legend>
+
+                <input type="radio" name="dessert-radio" id="dessert-1" class="sr-only" aria-labelledby="label-dessert-1 desc-dessert-1 price-dessert-1">
+                <div class="dish">
+                    <div class="u-flex-row">
+                        <div class="dish__details">
+                            <label id="label-dessert-1" for="dessert-1">Paris Brest</label>
+                            <p id="desc-dessert-1">Revisité</p>
+                        </div>
+
+                        <p id="price-dessert-1" class="dish__price">
+                            <strong>18€</strong>
+                        </p>
+
+                        <span class="dish__check-icon" aria-hidden="true">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    </div>
+                </div>
+
+                
+                <input type="radio" name="dessert-radio" id="dessert-2" class="sr-only" aria-labelledby="label-dessert-2 desc-dessert-2 price-dessert-2">
+                <div class="dish">
+                    <div class="u-flex-row">
+                        <div class="dish__details">
+                            <label id="label-dessert-2" for="dessert-2">Macaron au chocolat d'exception</label>
+                            <p id="desc-dessert-2">Et glace à la vanille de Madagascar</p>
+                        </div>
+
+                        <p id="price-dessert-2" class="dish__price">
+                            <strong>22€</strong>
+                        </p>
+
+                        <span class="dish__check-icon" aria-hidden="true">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <input type="radio" name="dessert-radio" id="dessert-3" class="sr-only" aria-labelledby="label-dessert-3 desc-dessert-3 price-dessert-3">
+                <div class="dish">
+                    <div class="u-flex-row">
+                        <div class="dish__details">
+                            <label id="label-dessert-3" for="dessert-3">Mousse au chocolat</label>
+                            <p id="desc-dessert-3">Au piment d'Espelette et à la truffe noire</p>
+                        </div>
+
+                        <p id="price-dessert-3" class="dish__price">
+                            <strong>23€</strong>
+                        </p>
+
+                        <span class="dish__check-icon" aria-hidden="true">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    </div>
+                </div>
+            </fieldset>
+
+             <a class="menu-form__button-primary" type="submit">Commander</a>
         </form>
     </main>
 

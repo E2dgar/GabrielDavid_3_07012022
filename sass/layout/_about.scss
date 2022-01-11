@@ -3,8 +3,7 @@
     padding: 2rem 1rem;
 
     h1,
-    p,
-    a {
+    p {
         margin: 0 auto;
         text-align: center;
     }
@@ -20,20 +19,5 @@
         color: $color-black-lighter;
     }
 
-    a {
-        display: block;
-        max-width: max-content;
-        padding: 1rem 1.5rem;
-        margin: 2rem auto;
-        border-radius: 50px;
-        background: linear-gradient($color-secondary, $color-primary);
-        color: $color-white;
-        transition: opacity .4s, box-shadow .4s;
-        @include main-shadow;
-
-        &:hover {
-            opacity: .85;
-            box-shadow: 2px 2px 5px 2px#949494;
-        }
-    }
+    
 }
