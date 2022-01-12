@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Les menus de La palette du goût">
+    <meta name="description" content="Les menus de La note enchantée">
     <link rel="stylesheet" href="dist/css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.css">
     <link rel="stylesheet" href="dist/css/main.min.css">
-    <title>La palette du goût | Oh My Food</title>
+    <title>La note enchantée | Oh My Food</title>
 </head>
 <body>
     <header class="header">     
@@ -24,26 +24,26 @@
     <main>
         <section class="hero">
             <div class="hero__img-container">
-                <img srcset="./dist/img/palette_576.jpg 576w,
-                             ./dist/img/palette_800.jpg 800w,
-                             ./dist/img/palette_1200.jpg 1200w,
-                             ./dist/img/palette_1920.jpg 1920w,
-                             ./dist/img/palette_2500.jpg 2500w"
+                <img srcset="./dist/img/enchantee_576.jpg 576w,
+                             ./dist/img/enchantee_800.jpg 800w,
+                             ./dist/img/enchantee_1200.jpg 1200w,
+                             ./dist/img/enchantee_1920.jpg 1920w,
+                             ./dist/img/enchantee_2500.jpg 2500w"
                     sizes="(max-width: 576px),
                            (min-width: 576px and max-width: 799px) 800px,
                            (min-width: 800px and max-width: 1199px) 1200px,
                            (min-width: 1200px and max-width: 1919px) 1920px,
                            (min-width: 1920px) 2500px"
-                    src="./dist/img/palette_1200.jpg"
-                    alt="Plats restaurant la palette des goûts">
+                    src="./dist/img/enchantee_1200.jpg"
+                    alt="Plats restaurant la note enchantée">
             </div>
             
             <div class="hero__details-container">
-                <h1 class="hero__heading">La palette du goût</h1>
+                <h1 class="hero__heading">La note enchantée</h1>
 
-                <form id="like-form-palette">
-                    <label for="like-palette" aria-label="Liker La palette du goût">
-                        <input class="sr-only" type="checkbox" name="like-palette" id="like-palette">  
+                <form id="like-form-enchantee">
+                    <label for="like-enchantee" aria-label="Liker La note enchantée">
+                        <input class="sr-only" type="checkbox" name="like-enchantee" id="like-enchantee">  
                         <div class="heart" aria-hidden="true">
                             <i class="far fa-heart"></i>
 
@@ -65,8 +65,8 @@
                 <div class="dish">
                     <div class="u-flex-row">
                         <div class="dish__details">
-                            <label id="label-entree-1" for="entree-1">Fricassée d'escargot</label>
-                            <p id="desc-entree-1">Au piment d'Espelette</p>
+                            <label id="label-entree-1" for="entree-1">Ravioles de foie gras</label>
+                            <p id="desc-entree-1">Accompagnés de leur crème à la truffe</p>
                         </div>
 
                         <p id="price-entree-1" class="dish__price">
@@ -83,8 +83,8 @@
                 <div class="dish">
                     <div class="u-flex-row">
                         <div class="dish__details">
-                            <label id="label-entree-2" for="entree-2">Foie gras de canard mi-cuit</label>
-                            <p id="desc-entree-2">Et ses copeaux de truffe noire</p>
+                            <label id="label-entree-2" for="entree-2">Caviar osciètre</label>
+                            <p id="desc-entree-2">Sur blini à la farine de blé noir</p>
                         </div>
 
                         <p id="price-entree-2" class="dish__price">
@@ -101,12 +101,30 @@
                 <div class="dish">
                     <div class="u-flex-row">
                         <div class="dish__details">
-                            <label id="label-entree-3" for="entree-3">Oeuf au plat</label>
-                            <p id="desc-entree-3 "title="Assaisonné à la truffe sur lit de cavia">Assaisonné à la truffe sur lit de caviar</p>
+                            <label id="label-entree-3" for="entree-3">Homard et espuma de potiron</label>
+                            <p id="desc-entree-3 "title="Assaisonné à la truffe sur lit de cavia">Mariné aux zestes d'orange</p>
                         </div>
 
                         <p id="price-entree-3" class="dish__price">
                             <strong>20€</strong>
+                        </p>
+
+                        <span class="dish__check-icon" aria-hidden="true">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <input type="radio" name="entree-radio" id="entree-4" class="sr-only" aria-labelledby="label-entree-4 desc-entree-4 price-entree-4">
+                <div class="dish">
+                    <div class="u-flex-row">
+                        <div class="dish__details">
+                            <label id="label-entree-4" for="entree-4">Foie gras de canard cuit entier</label>
+                            <p id="desc-entree-4 "title="Assaisonné à la truffe sur lit de cavia">Confiture de figue et pain toasté</p>
+                        </div>
+
+                        <p id="price-entree-4" class="dish__price">
+                            <strong>35€</strong>
                         </p>
 
                         <span class="dish__check-icon" aria-hidden="true">
@@ -124,8 +142,8 @@
                 <div class="dish">
                     <div class="u-flex-row">
                         <div class="dish__details">
-                            <label id="label-plat-1" for="plat-1">Filet de boeuf aux herbes</label>
-                            <p id="desc-plat-1">Accompagné de sa ribambelle de légumes</p>
+                            <label id="label-plat-1" for="plat-1">Noix de coquilles Saint-Jacques</label>
+                            <p id="desc-plat-1">Sur lit de purée de céleri-rave</p>
                         </div>
 
                         <p id="price-plat-1" class="dish__price">
@@ -142,8 +160,8 @@
                 <div class="dish">
                     <div class="u-flex-row">
                         <div class="dish__details">
-                            <label id="label-plat-2" for="plat-2">Parmentier de queue de boeuf</label>
-                            <p id="desc-plat-2">À la truffe noire sur sa purée de panais</p>
+                            <label id="label-plat-2" for="plat-2">Langoustine poêlée</label>
+                            <p id="desc-plat-2">Purée de patate douce</p>
                         </div>
 
                         <p id="price-plat-2" class="dish__price">
@@ -160,8 +178,8 @@
                 <div class="dish">
                     <div class="u-flex-row">
                         <div class="dish__details">
-                            <label id="label-plat-3" for="plat-3">Filet de turbot</label>
-                            <p id="desc-plat-3">Aux agrumes</p>
+                            <label id="label-plat-3" for="plat-3">Mijoté de queue de boeuf</label>
+                            <p id="desc-plat-3">Et riz sauvage aux zestes de citron</p>
                         </div>
 
                         <p id="price-plat-3" class="dish__price">
@@ -183,8 +201,8 @@
                 <div class="dish">
                     <div class="u-flex-row">
                         <div class="dish__details">
-                            <label id="label-dessert-1" for="dessert-1">Paris Brest</label>
-                            <p id="desc-dessert-1">Revisité</p>
+                            <label id="label-dessert-1" for="dessert-1">Macaron noisette et chocolat</label>
+                            <p id="desc-dessert-1">Glace au caramel brun et sel de Guérande</p>
                         </div>
 
                         <p id="price-dessert-1" class="dish__price">
@@ -220,12 +238,30 @@
                 <div class="dish">
                     <div class="u-flex-row">
                         <div class="dish__details">
-                            <label id="label-dessert-3" for="dessert-3">Mousse au chocolat</label>
-                            <p id="desc-dessert-3">Au piment d'Espelette et à la truffe noire</p>
+                            <label id="label-dessert-3" for="dessert-3">Baba au rhum revisité</label>
+                            <p id="desc-dessert-3">Avec son coulis de citron</p>
                         </div>
 
                         <p id="price-dessert-3" class="dish__price">
-                            <strong>23€</strong>
+                            <strong>22€</strong>
+                        </p>
+
+                        <span class="dish__check-icon" aria-hidden="true">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <input type="radio" name="dessert-radio" id="dessert-4" class="sr-only" aria-labelledby="label-dessert-4 desc-dessert-4 price-dessert-4">
+                <div class="dish">
+                    <div class="u-flex-row">
+                        <div class="dish__details">
+                            <label id="label-dessert-4" for="dessert-4">Tarte au citron meringuée</label>
+                            <p id="desc-dessert-4">Déstructurée</p>
+                        </div>
+
+                        <p id="price-dessert-4" class="dish__price">
+                            <strong>22€</strong>
                         </p>
 
                         <span class="dish__check-icon" aria-hidden="true">
