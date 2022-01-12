@@ -29,7 +29,7 @@
                              ./dist/img/francaise_1200.jpg 1200w,
                              ./dist/img/francaise_1920.jpg 1920w,
                              ./dist/img/francaise_2500.jpg 2500w"
-                    sizes="(max-width: 576px),
+                    sizes="(max-width: 576px) 576px,
                            (min-width: 576px and max-width: 799px) 800px,
                            (min-width: 800px and max-width: 1199px) 1200px,
                            (min-width: 1200px and max-width: 1919px) 1920px,
@@ -42,16 +42,16 @@
                 <h1 class="hero__heading">À la française</h1>
 
                 <form id="like-form-francaise">
-                    <label for="like-francaise" aria-label="Liker À la française">
-                        <input class="sr-only" type="checkbox" name="like-francaise" id="like-francaise">  
-                        <div class="heart" aria-hidden="true">
-                            <i class="far fa-heart"></i>
+                    <label for="like-francaise" aria-label="Liker À la française"></label>
 
-                            <div class="heart-bkg">
-                                <i class="fas fa-heart"></i>
-                            </div>
+                    <input class="sr-only" type="checkbox" name="like-francaise" id="like-francaise">  
+                    <div class="heart" aria-hidden="true">
+                        <i class="far fa-heart"></i>
+
+                        <div class="heart-bkg">
+                            <i class="fas fa-heart"></i>
                         </div>
-                    </label>
+                    </div>
                 </form>
             </div>
         </section>
@@ -102,7 +102,7 @@
                     <div class="u-flex-row">
                         <div class="dish__details">
                             <label id="label-entree-3" for="entree-3">Soupe à l'oignon</label>
-                            <p id="desc-entree-3 "title="Assaisonné à la truffe sur lit de cavia">Revisitée</p>
+                            <p id="desc-entree-3">Revisitée</p>
                         </div>
 
                         <p id="price-entree-3" class="dish__price">
@@ -235,7 +235,7 @@
                 </div>
             </fieldset>
 
-             <a class="menu-form__button-primary" type="submit">Commander</a>
+             <button class="menu-form__button-primary" type="submit">Commander</button>
         </form>
     </main>
 

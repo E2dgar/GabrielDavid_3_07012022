@@ -1,5 +1,6 @@
-a[class*="button-primary"] {
+*[class*="button-primary"] {
     display: block;
+    border: none;
     max-width: max-content;
     min-width: 180px;
     text-align: center;
