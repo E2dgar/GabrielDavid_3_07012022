@@ -1,0 +1,61 @@
+@media screen and(min-width: 576px){
+    /*Menu */
+    .hero {
+        max-width: unset;
+
+        &__img-container {
+            aspect-ratio: 3 /1 ;
+    
+            img {
+                object-position: center;
+            }
+        }
+
+        &__details-container {
+            width: 500px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $color-white;
+            border-radius: 20px;
+            bottom: 20px;
+            @include main-shadow;
+    
+            form {
+                bottom: 1rem;
+            }
+    
+            h1 {
+                padding: 1rem 2rem ;
+            }
+    
+        }
+    }
+
+    .menu-form {
+        background-color: unset;
+
+        fieldset {
+            background: $color-grey-main;
+            border-radius: 10px;
+            margin: 4rem 0;
+            @include main-shadow;
+
+            
+
+            legend {
+                top: -1rem;
+            }
+        }
+    }
+}
+
+@media screen and(min-width: 768px){
+    .menu-form fieldset {
+        &:first-child {
+            transform: translateX(-5vw);
+        }
+        &:nth-child(2) {
+            transform: translateX(5vw);
+        }
+    }
+}

@@ -1,6 +1,6 @@
 .menu-form {
     background-color: $color-grey-main;
-    max-width: 500px;
+    max-width: 576px;
     width: 100%;
     margin: 0 auto;
     padding-bottom: 3rem;
@@ -35,7 +35,7 @@
             background-color: $color-white;
             border-radius: 14px;
             position: relative;
-            width: calc( 100vw -(100vw - 500px) - 3rem);
+            /*width: calc( 100vw - (100vw - 500px) - 3rem);*/
 
             &:nth-child(3){
                 animation: appear-item-1 1.5s ease-in-out;

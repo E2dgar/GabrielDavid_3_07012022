@@ -23,7 +23,18 @@
     <main>
         <section class="hero">
             <div class="hero__img-container">
-                <img src="./dist/img/palette_du_gout.jpg" alt="Plats restaurant la palette des goûts">
+                <img srcset="./dist/img/palette_576.jpg 576w,
+                             ./dist/img/palette_800.jpg 800w,
+                             ./dist/img/palette_1200.jpg 1200w,
+                             ./dist/img/palette_1920.jpg 1920w,
+                             ./dist/img/palette_2500.jpg 2500w"
+                    sizes="(max-width: 576px),
+                           (min-width: 576px and max-width: 799px) 800px,
+                           (min-width: 800px and max-width: 1199px) 1200px,
+                           (min-width: 1200px and max-width: 1919px) 1920px,
+                           (min-width: 1920px) 2500px"
+                    src="./dist/img/palette_1200.jpg"
+                    alt="Plats restaurant la palette des goûts">
             </div>
             
             <div class="hero__details-container">
@@ -89,8 +100,8 @@
                 <div class="dish">
                     <div class="u-flex-row">
                         <div class="dish__details">
-                            <label id="label-entree-3" for="entree-3">Oeuf au plat</label>
-                            <p id="desc-entree-3">Assaisonné à la truffe sur lit de caviar</p>
+                            <label id="label-entree-3" for="entree-3" title="Ouef au plat">Oeuf au plat</label>
+                            <p id="desc-entree-3 "title="Assaisonné à la truffe sur lit de cavia">Assaisonné à la truffe sur lit de caviar</p>
                         </div>
 
                         <p id="price-entree-3" class="dish__price">
