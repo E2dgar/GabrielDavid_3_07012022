@@ -48,14 +48,3 @@
         }
     }
 }
-
-@media screen and(min-width: 768px){
-    .menu-form fieldset {
-        &:first-child {
-            transform: translateX(-5vw);
-        }
-        &:nth-child(2) {
-            transform: translateX(5vw);
-        }
-    }
-}

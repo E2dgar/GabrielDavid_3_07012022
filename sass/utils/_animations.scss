@@ -1,60 +1,53 @@
-@keyframes appear-item-1 {
-    0% {
-        opacity: 0;
-        transform: translateY(35%);
-    }
-    20% {
-        opacity: 0;
-        transform: translateY(35%);
+$fieldsets-animation-duration: ("entrees": "1s", "plats": "2s", "desserts": "3s");
+$fieldsets-animation-step: ("entrees": 20%, "plats": 50%, "desserts": 60%);
 
-    }
-    80% {
-        opacity: 1;
-        transform: translateY(-5%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+$items-delay: (1: 30%, 2: 45%, 3: 60%, 4: 75%);
 
-@keyframes appear-item-2 {
-    0% {
-        opacity: 0;
-        transform: translateY(35%);
+@each $fieldset, $duration in $fieldsets-animation-duration {
+    .#{$fieldset} {
+        animation: #{$fieldset}-appear #{$duration};
     }
-    30% {
-        opacity: 0;
-        transform: translateY(35%);
 
+
+    @keyframes #{$fieldset}-appear {
+        0% {
+            opacity: 0;
+            transform: translateY(50%);
+        }
+        #{map-get($fieldsets-animation-step, #{$fieldset})} {
+            opacity: 0;
+            transform: translateY(50%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
-    80% {
-        opacity: 1;
-        transform: translateY(-5%);
-    }
+
+    @each $item, $delay in $items-delay {
+        .#{$fieldset} .dish-animation-#{$item} {
+            animation: appear-item-#{$item} 3s calc( #{map-get($fieldsets-animation-duration, #{$fieldset})} - 1s);
+        }
     
-    100% {
-        opacity: 1;
-        transform: translateY(0);
+        @keyframes appear-item-#{$item} {
+            0% {
+                opacity: 0;
+                transform: translateY(60%);
+            }
+            #{$delay} {
+                opacity: 0;
+                transform: translateY(60%);
+            }
+            80% {
+                opacity: 1;
+                transform: translateY(-5%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     }
+
 }
 
-@keyframes appear-item-3 {
-    0% {
-        opacity: 0;
-        transform: translateY(35%);
-    }
-    40% {
-        opacity: 0;
-        transform: translateY(35%);
-
-    }
-    80% {
-        opacity: 1;
-        transform: translateY(-5%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
