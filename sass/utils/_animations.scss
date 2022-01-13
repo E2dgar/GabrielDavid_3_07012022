@@ -1,7 +1,7 @@
 $fieldsets-animation-duration: ("entrees": "1s", "plats": "2s", "desserts": "3s");
-$fieldsets-animation-step: ("entrees": 20%, "plats": 50%, "desserts": 60%);
+$fieldsets-animation-step: ("entrees": 20%, "plats": 65%, "desserts": 75%);
 
-$items-delay: (1: 30%, 2: 45%, 3: 60%, 4: 75%);
+$items-step: (1: 30%, 2: 40%, 3: 50%, 4: 60%);
 
 @each $fieldset, $duration in $fieldsets-animation-duration {
     .#{$fieldset} {
@@ -24,9 +24,9 @@ $items-delay: (1: 30%, 2: 45%, 3: 60%, 4: 75%);
         }
     }
 
-    @each $item, $delay in $items-delay {
+    @each $item, $step in $items-step {
         .#{$fieldset} .dish-animation-#{$item} {
-            animation: appear-item-#{$item} 3s calc( #{map-get($fieldsets-animation-duration, #{$fieldset})} - 1s);
+            animation: appear-item-#{$item} 2s calc( #{map-get($fieldsets-animation-duration, #{$fieldset})} - 1s);
         }
     
         @keyframes appear-item-#{$item} {
@@ -34,7 +34,7 @@ $items-delay: (1: 30%, 2: 45%, 3: 60%, 4: 75%);
                 opacity: 0;
                 transform: translateY(60%);
             }
-            #{$delay} {
+            #{$step} {
                 opacity: 0;
                 transform: translateY(60%);
             }
