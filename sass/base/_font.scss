@@ -5,16 +5,6 @@ $f20: 1.25rem;
 $title: 1.5rem;  /* 24px */
 $logo: 2rem;        /* 32px */
 
-html {
-    font-size: 100%;
-}
-
-body {
-    font-family: "Roboto", sans-serif;
-    font-size: 1rem;
-}
-
-*[class*="logo"],
-*[class*="heading"]{
-    font-family: "Shrikhand", sans-serif;
-}
+/*Font family */
+$font-main: "Roboto", sans-serif;
+$font-title: "Shrikhand", sans-serif;

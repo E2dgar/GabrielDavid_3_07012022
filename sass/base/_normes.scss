@@ -7,6 +7,7 @@
 /* Scroll */
 html {
     scroll-behavior: smooth;
+    font-size: 100%;
 }
 
 /* Links */
@@ -25,4 +26,14 @@ a {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap; /* added line */
   border: 0;
+}
+
+body {
+  font-family: $font-main;
+  font-size: 1rem;
+}
+
+*[class*="logo"],
+*[class*="heading"]{
+  font-family: $font-title;
 }

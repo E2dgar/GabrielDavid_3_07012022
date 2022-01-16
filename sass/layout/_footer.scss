@@ -15,8 +15,7 @@
         list-style-type: none;
         padding: 0;
         line-height: 1.5;
-
-        
+      
         li {
             display: flex;
             align-items: center;
@@ -41,9 +40,6 @@
                 flex-basis: 2rem;
                 transition: color .3s;
             }
-
         }
-
-        
     }
 }
