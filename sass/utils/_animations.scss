@@ -8,7 +8,6 @@ $items-step: (1: 30%, 2: 40%, 3: 50%, 4: 60%);
         animation: #{$fieldset}-appear #{$duration};
     }
 
-
     @keyframes #{$fieldset}-appear {
         0% {
             opacity: 0;
